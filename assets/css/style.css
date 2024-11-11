@@ -1,0 +1,410 @@
+
+html{
+	font-size: 62.5%;
+}
+body{	
+	font-size: 1.6rem;
+	font-family: 'SF Pro Display';
+	font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li a,a{
+	text-decoration: none;
+}
+/*=================  Start Header Section  =================*/
+.banner_main{
+	height: 100vh;
+	background: -o-linear-gradient(44.64deg, #F6D832 23.2%, #F6D733 29.03%, #F2BB37 53.07%, #EF9B3C 69.53%, #ED8A3F 78.59%);
+	background: linear-gradient(45.36deg, #F6D832 23.2%, #F6D733 29.03%, #F2BB37 53.07%, #EF9B3C 69.53%, #ED8A3F 78.59%);
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	z-index: 2;
+}
+.banner_main::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg-overlay.png) no-repeat scroll 0 0 / cover;
+	opacity: 0.05;
+	z-index: -1;
+}
+/*.create_new_password{
+	max-width: 592px;
+	width: 100%;
+	margin: auto;
+	background: #FFF;
+	border-radius: 60px;
+	padding: 50px 90px;
+}*/
+.create_new_password {
+    max-width: 592px;
+    width: 100%;
+    margin: auto;
+    background: #FFF;
+    /* border-radius: 60px; */
+    padding: 50px 90px;
+    background: #FFF;
+    --squircle-smooth: 0.8;
+    --squircle-radius: 60px;
+    --squircle-outline: 0px;
+    --squircle-fill: #FFF;
+    -webkit-mask-image: paint(squircle);
+            mask-image: paint(squircle);
+    color: white;
+}
+.create_new_password_title h2{
+	font-size: 40px;
+	line-height: 40px;
+	background: -o-linear-gradient(30.51deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	background: linear-gradient(59.49deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+	font-weight: bold;
+}
+.create_new_password_title p{
+	margin-top: 25px;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 600;
+	text-align: center;
+	color: #00000080;
+}
+.create_new_password_inputs{
+	margin-top: 50px;
+}
+.create_new_password_inputs input{
+	display: block;
+	padding: 10px 18px;
+	width: 100%;
+	/*border-width: 1.5px;
+	border-style: solid;
+	border-image: linear-gradient(52.91deg, #EF9B3C 25.56%, #ED8B3F 25.57%, #ED8A3F 25.57%, #ED8A3F 25.58%, #ED8A3F 70.09%, #ED8A3F 71.64%, #ED8A3F 71.65%) 1;
+	*/
+	border: 1.5px solid #EF9B3C;
+	border-radius: 15px;
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+.create_new_password_inputs input::-webkit-input-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.create_new_password_inputs input::-moz-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.create_new_password_inputs input:-ms-input-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.create_new_password_inputs input::-ms-input-placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.create_new_password_inputs input::placeholder{
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+.btn_style{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: #FFF;
+	width: 100%;
+	padding: 10px 10px;
+	border-radius: 15px;
+	background: var(--Light-mode-orange, #F2B239);
+	border: 1.5px solid var(--Light-mode-orange, #F2B239);
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.btn_style:hover{
+	/*background: transparent;
+	color: var(--Light-mode-orange, #F2B239);*/
+	background: #EF9B3C;
+	color: #FFF;
+}
+.create_new_password_inputs button{
+	margin-top: 15px;
+}
+
+/*Start Header*/
+.header_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0px;
+    -webkit-box-shadow: 0px 5px 15px 0px #FFFFFF66;
+            box-shadow: 0px 5px 15px 0px #FFFFFF66;
+    border-radius: 0px 0px 40px 40px;
+    background: #FFF;
+    z-index: 5;
+}
+.header_mainsquircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 75px 0px 22px 0px;
+    -webkit-box-shadow: 0px 5px 15px 0px #FFFFFF66;
+            box-shadow: 0px 5px 15px 0px #FFFFFF66;
+    background: #FFF;
+    --squircle-smooth: 0.8;
+    --squircle-radius: 40px;
+    --squircle-outline: 0px;
+    --squircle-fill: #FFF;
+    -webkit-mask-image: paint(squircle);
+            mask-image: paint(squircle);
+    color: white;
+    margin-top: -50px;
+}
+.shape {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #FFF;
+    z-index: 100;
+}
+/*.shape_1st{
+	top: 0;
+	left: 0;
+}*/
+.shape_3rd{
+	bottom: 0;
+	left: 0;
+}
+.shape_4th{
+	bottom: 0;
+	right: 0;
+}
+.logo a img{
+	width: 100px;
+	height: auto;
+}
+
+/*Start Footer*/
+.footer_main{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 0px;
+	-webkit-box-shadow: 0px 5px 15px 0px #FFFFFF66;
+	        box-shadow: 0px 5px 15px 0px #FFFFFF66;
+	border-radius: 40px 40px 0px 0px;
+	background: #FFF;
+	z-index: 2;
+}
+.footer_mainsquircle{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 0px;
+	-webkit-box-shadow: 0px 5px 15px 0px #FFFFFF66;
+	        box-shadow: 0px 5px 15px 0px #FFFFFF66;
+	background: #FFF;
+    --squircle-smooth: 0.8;
+    --squircle-radius: 40px;
+    --squircle-outline: 0px;
+    --squircle-fill: #FFF;
+    -webkit-mask-image: paint(squircle);
+            mask-image: paint(squircle);
+    color: white;
+	z-index: 2;
+}
+.footer{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.footer_left p{
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 500;
+	background: -o-linear-gradient(30.51deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	background: linear-gradient(59.49deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer_middle ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.footer_middle ul li a{
+	font-family: "Roboto Condensed", sans-serif;
+	display: inline-block;
+	background: -o-linear-gradient(30.51deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	background: linear-gradient(59.49deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 100px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.footer_middle ul li:last-child a{
+	margin-right: 0px !important;
+}
+.footer_middle ul li a:hover{
+	border-bottom: 1px solid #000;
+}
+.footer_right ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.footer_right ul li a{
+	display: inline-block;
+	margin-right: 50px;
+}
+.footer_right ul li:last-child a{
+	margin-right: 0px !important;
+}
+.footer_right ul li a img{
+	width: 24px;
+	height: auto;
+}
+
+/*Start Successful changed*/
+.successful_changed{
+	max-width: 1040px;
+	width: 100%;
+	margin: auto;
+	padding: 100px 70px 70px 70px;
+	background: #FFF;
+/*	border-radius: 60px;*/
+    --squircle-smooth: 0.8;
+    --squircle-radius: 60px;
+    --squircle-outline: 0px;
+    --squircle-fill: #FFF;
+    -webkit-mask-image: paint(squircle);
+            mask-image: paint(squircle);
+    color: white;
+}
+.successful_changed h1{
+	font-size: 70px;
+	line-height: 78px;
+	background: -o-linear-gradient(30.51deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	background: linear-gradient(59.49deg, #9F9F9F -3.71%, #777777 -3.7%, #434343 37.97%, #3A3A3A 102.06%, #272727 102.07%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+.successful_changed span img{
+	width: 100px;
+	height: auto;
+	margin-top: 55px;
+}
+.successful_changed{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+/*End Successful changed*/
+
+/*=================  End Home Page  =================*/
+
+/*=================  Start Reset Password Page  =================*/
+.header_main3{
+	border-radius: 0px;
+	position: inherit;
+	border-bottom: 8px solid var(--Light-mode-orange, #F2B239);
+}
+.logo3{
+	max-width: 535px;
+	width: 100%;
+	margin: auto;
+}
+.reset_password_contents{
+	padding: 20px 0px 30px 0px;
+	max-width: 535px;
+	width: 100%;
+	margin: auto;
+	border-bottom: 1px solid #DEDEDE;
+}
+.reset_password_contents h3{
+	font-size: 32px;
+	font-weight: 700;
+	color: #222121;
+}
+.reset_password_contents p{
+	font-size: 32px;
+	line-height: 48px;
+	color: #000000CC;
+	margin: 20px 0px;
+}
+
+.reset_password_footer_contents{
+	max-width: 535px;
+	width: 100%;
+	margin: auto;
+	padding: 30px 0px 50px 0px;
+}
+.reset_password_footer_contents p{
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #979797;
+}
+
+.reset_password_contents h1{
+	font-size: 64px;
+	line-height: 96px;
+	font-weight: 500;
+	color: var(--DarkMode-Theme-color, #FF8C00);
+}
+
+/*=================  End Reset Password Page  =================*/
+
+.header_mainsquircle,
+.footer_mainsquircle,
+.create_new_password,
+.successful_changed {
+    background-color: #FFF;
+    border-radius: 40px;
+}
+
+@supports (-webkit-mask-image: paint(squircle)) {
+    .header_mainsquircle,
+    .footer_mainsquircle,
+    .create_new_password,
+    .successful_changed {
+        -webkit-mask-image: paint(squircle);
+        mask-image: paint(squircle);
+    }
+}
+
